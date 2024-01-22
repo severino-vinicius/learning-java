@@ -1,8 +1,13 @@
 package abstraction.electronic;
 
 public class Television {
+  String brand;
+  String model;
+  int size;
 
-  public Television() {
-    System.out.println("Construtor da classe Television sendo executado...");
+  public Television(String brand, String model, int size) {
+    this.brand = brand;
+    this.model = model;
+    this.size = size;
   }
 }
