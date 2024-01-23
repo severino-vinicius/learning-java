@@ -12,4 +12,11 @@ public class Warrior extends PlayableCharacter{
     this.weapon = weapon;
   }
 
+  public void specialAttack() {
+    if (!isAlive) {
+      System.out.println("Character died and cannot use special attack.");
+    }
+    System.out.printf("%s is using special attack!", this.getName());
+  }
+
 }
