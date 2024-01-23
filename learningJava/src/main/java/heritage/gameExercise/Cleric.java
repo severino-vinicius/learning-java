@@ -7,6 +7,11 @@ public class Cleric extends PlayableCharacter {
     return magic;
   }
 
+  @Override
+  public void attack() {
+    System.out.println("The Cleric casts a spell");
+  }
+
   public void setMagic(String magic) {
     this.magic = magic;
   }

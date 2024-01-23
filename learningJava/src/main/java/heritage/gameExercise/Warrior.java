@@ -12,6 +12,11 @@ public class Warrior extends PlayableCharacter{
     this.weapon = weapon;
   }
 
+  @Override
+  public void attack() {
+    System.out.println("The Warrior attacks with his sword.");
+  }
+
   public void specialAttack() {
     if (!isAlive) {
       System.out.println("Character died and cannot use special attack.");

@@ -30,7 +30,7 @@ public class PlayableCharacter {
       System.out.println("Character died and cannot move.");
       return;
     }
-    System.out.printf("%s is moving!", name);
+    System.out.printf("%s is moving! %n", name);
   }
 
   public void attack() {
@@ -38,6 +38,6 @@ public class PlayableCharacter {
       System.out.println("Character died and cannot attack.");
       return;
     }
-    System.out.printf("%s is attacking!", name);
+    System.out.printf("%s is attacking! %n", name);
   }
 }
