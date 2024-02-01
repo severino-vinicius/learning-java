@@ -58,7 +58,7 @@ public class PodcastController {
 
     savedPodcast.setName(newPodcast.name());
     savedPodcast.setUrl(newPodcast.url());
-    //Podcast savedPodcast = service.savePodcast(newPodcast);
+    service.savePodcast(savedPodcast);
 
     PodcastDto podcastDto = new PodcastDto(
         savedPodcast.getId(),
